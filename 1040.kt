@@ -1,4 +1,5 @@
 fun main(args: Array<String>) {
+//For some reason Uri don't accept this code
 var N1: Double = readLine()!!.toDouble()
 var N2: Double = readLine()!!.toDouble()
 var N3: Double = readLine()!!.toDouble()
