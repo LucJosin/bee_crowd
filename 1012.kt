@@ -1,13 +1,10 @@
 fun main(args: Array<String>) {
-//For some reason Uri don't accept this code
-var A: Double = readLine()!!.toDouble()
-var B: Double = readLine()!!.toDouble()
-var C: Double = readLine()!!.toDouble()
+var (A, B, C) = readLine()!!.split(' ').map{ it.toDouble() }
 var pi: Double = 3.14159
 
-var TRIANGULO = (A * C) / 2.0
+var TRIANGULO = (A * C) / 2
 var CIRCULO = pi * C * C
-var TRAPEZIO = ((A + B) * C) / 2.0
+var TRAPEZIO = ((A + B) * C) / 2
 var QUADRADO = B * B
 var RETANGULO = A * B
   

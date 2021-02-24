@@ -1,9 +1,6 @@
 fun main(args: Array<String>) {
 //For some reason Uri don't accept this code
-var N1: Double = readLine()!!.toDouble()
-var N2: Double = readLine()!!.toDouble()
-var N3: Double = readLine()!!.toDouble()
-var N4: Double = readLine()!!.toDouble()
+var (N1, N2, N3, N4) = readLine()!!.split(' ').map{ it.toDouble() }
     
 var media: Double = (N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1) / (1 + 2 + 3 + 4)
 println("Media: " + String.format("%.1f", media))

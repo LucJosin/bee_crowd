@@ -1,8 +1,6 @@
 fun main(args: Array<String>) {
-//For some reason Uri don't accept this code
-var X: Double = readLine()!!.toDouble()
-var Y: Double = readLine()!!.toDouble()
-    
+var (X, Y) = readLine()!!.split(' ').map{ it.toDouble() }
+  
 if (X == 0.0 && Y == 0.0) {
     println("Origem")
 } else if (X != 0.0 && Y == 0.0) {

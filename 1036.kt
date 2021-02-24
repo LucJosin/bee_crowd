@@ -1,8 +1,5 @@
 fun main(args: Array<String>) {
-//For some reason Uri don't accept this code
-var A: Double = readLine()!!.toDouble()
-var B: Double = readLine()!!.toDouble()
-var C: Double = readLine()!!.toDouble()
+var (A, B, C) = readLine()!!.split(' ').map{ it.toDouble() }
 var delta: Double = 0.0
 
 if (A == 0.0) return println("Impossivel calcular")

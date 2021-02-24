@@ -1,15 +1,11 @@
 fun main(args: Array<String>) {
-//For some reason Uri don't accept this code
-var cod: Int = readLine()!!.toInt()
-var amount: Int = readLine()!!.toInt()
-    
+var (cod, amount) = readLine()!!.split(' ').map(String::toInt) 
 var foodPrice: List<Double> = listOf(4.00, 4.50, 5.00, 2.00, 1.50)
 
 var total = foodPrice[cod - 1] * amount
 println("Total: R$ " + String.format("%.2f", total))
 
-// var cod: Int = readLine()!!.toInt()
-// var amount: Int = readLine()!!.toInt()
+// var (cod, amount) = readLine()!!.split(' ').map(String::toInt)
 // var foodPrice: List<Double> = listOf(4.00, 4.50, 5.00, 2.00, 1.50)
     
 // when (cod) {

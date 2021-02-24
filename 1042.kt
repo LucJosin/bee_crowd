@@ -1,19 +1,19 @@
 fun main(args: Array<String>) {
-//For some reason Uri don't accept this code
-var A: Int = readLine()!!.toInt()
-var B: Int = readLine()!!.toInt()
-var C: Int = readLine()!!.toInt()
-val list = intArrayOf(A, B, C)
-val listNormal = intArrayOf(A, B, C)
+//Others methods
+// var (A, B, C) = readLine()!!.split(' ').map(String::toInt)
+// var listOriginal = intArrayOf(A, B, C)
+// var list = intArrayOf(A, B, C)
+
+// var (A, B, C) = readLine()!!.split(' ').map{ it.toInt() }
+// var listOriginal = intArrayOf(A, B, C)
+// var list = intArrayOf(A, B, C)
+
+var (A, B, C) = readLine()!!.split(' ')
+var listOriginal = intArrayOf(A.toInt(), B.toInt(), C.toInt())
+var list = intArrayOf(A.toInt(), B.toInt(), C.toInt())
 
 list.sort()
-
-println(list[0])
-println(list[1])
-println(list[2])
+list.forEach {println("$it")}
 println("")
-
-println(listNormal[0])
-println(listNormal[1])
-println(listNormal[2])
+listOriginal.forEach {println("$it")}
 }
